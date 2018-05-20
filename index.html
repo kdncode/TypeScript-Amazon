@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript - Shopping Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="container-fluid">
+        </div>
+    </div>
+    <hr>
+
+    <div class="container" id="content">
+        <div class="row alert pt-2">
+            <div class="col-sm-12">
+                <div class="alert alert-success" role="alert">
+                    <div class="fa fa-check-square-o"></div>
+                    <strong>Item name: </strong> have successfully been added to cart.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="myText">Cart <small>(3 items)</small></h3>
+            </div>
+        </div>
+ 
+<!-- Products -->
+        <div class="row">
+            <div class="col-sm-8" id="left">
+                <div class="row oneItem">
+                    <div class="col-sm-3">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61C4TubWpSL._AA100_.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="" class="title">Macbook Pro 2017</a>
+                        <div class="description">Eligible for FREE Shipping</div>
+                    </div>
+
+                    <div class="col-sm-2"><span>$1299</span></div>
+
+                    <div class="col-sm-1">
+                        <input type="number" min="1" value="1" class="form-group quantity">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="btn-group">
+                            <div class="btn btn-outline-success updateItem">Update</div>
+                            <div class="btn btn-outline-danger deleteItem">Delete</div>
+                        </div>
+                    </div>
+
+                    <hr> <!--  end 1 item -->
+
+                    <div class="col-sm-3">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81qcvkPSa9L._AA100_.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="" class="title">iPhone X</a>
+                        <div class="description">Eligible for FREE Shipping</div>
+                    </div>
+
+                    <div class="col-sm-2"><span>$999</span></div>
+
+                    <div class="col-sm-1">
+                        <input type="number" min="1" value="1" class="form-group quantity">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="btn-group">
+                            <div class="btn btn-outline-success updateItem">Update</div>
+                            <div class="btn btn-outline-danger deleteItem">Delete</div>
+                        </div>
+                    </div>
+                </div>
+<hr>
+                <!-- Recommends -->
+                <div class="row otherItem">
+                    <div class="col-sm-12 py-3">
+                        <div class="myText">Your recently viewed items and featured recommendations</div>  
+                    </div>
+    
+                    <div class="col-sm-4">
+                        <div class="card _1recommendItem">
+                            <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/51MaJDdlHLL._AC_SR160,160_.jpg" alt="">
+                            <div class="card-block recommend">
+                                <a href="" class="">USB Type-C</a>
+                                <div class="card-text">Charging and Transferring Data</div>
+                                <b>$19.99</b>
+                                <a href="#" class="btn btn-outline-info btn-block">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card _1recommendItem">
+                            <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/61CVQ9TmP6L._AC_UL160_SR160,160_.jpg" alt="">
+                            <div class="card-block recommend">
+                                <a href="" class="">[3-Pack] Supershieldz</a>
+                                <div class="card-text">Anti-glare matte technology </div>
+                                <b>$9.99</b>
+                                <a href="#" class="btn btn-outline-info btn-block">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card _1recommendItem">
+                            <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/41ig5KHwjQL._AC_SR160,160_.jpg" alt="">
+                            <div class="card-block recommend">
+                                <a href="" class="">Mosiso Plastic Hard Case</a>
+                                <div class="card-text">Keyboard Cover for MacBook</div>
+                                <b>$29.99</b>
+                                <a href="#" class="btn btn-outline-info btn-block">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>  <!-- End Recommends -->
+            </div>  <!-- End Left Column -->
+            
+
+<!-- Right Column -->
+            <div class="col-sm-4" id="right">
+                <div class="bigRight card card-block">
+                    <div class="price">
+                        <div class="amount float-right">$30.00</div>
+                        <div class="total">Total: </div>
+                    </div>
+
+                    <div class="subTotal">
+                        <div class="amount float-right">
+                            <div class="red">$30.00</div>
+                        </div>
+                        <div class="total">Total: </div>
+                    </div>
+                </div>
+
+                <a href="" class="btn btn-danger btn-block btnAdd">Proceed to check out</a>
+            </div> <!-- End Right Column -->
+            
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/item.js"></script> -->
+</body>
+</html>

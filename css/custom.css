@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: red;
+    font-size: 20px;
+}
+
+#menu {
+    min-height: 200px;
+    background: url(../img/menu.png) no-repeat center;
+}
+
+.quantity {
+    width: 30px;
+    padding: 0px 0px 0px 1px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+.updateItem, .deleteItem {
+    font-size: 12px
+}
+
+.recommend {
+    margin: 15px;
+}
+
+/* Right col */
+.price {
+    padding: 12px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    margin-bottom: 10px;
+}
+
+.btnAdd {
+    margin-top: 20px;
+}
+
+.subTotal {
+    padding: 12px 15px 20px 15px;
+}
