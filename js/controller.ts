@@ -1,9 +1,12 @@
 import { Item } from './item';
 
-class Controller {
-    private product = Item[] = [];
+export class Controller {
+    // private product = Item[] = [];
 
-    constructor() {}
+    constructor() {
+        console.log('Test product');
+        
+    }
 
     getItems() : Item[] {
         return []

@@ -1,9 +1,10 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var item_1 = require("./item");
 var Controller = /** @class */ (function () {
+    // private product = Item[] = [];
     function Controller() {
-        this.product = item_1.Item[] = [];
+        console.log('Test product');
     }
     Controller.prototype.getItems = function () {
         return [];
@@ -18,3 +19,4 @@ var Controller = /** @class */ (function () {
     };
     return Controller;
 }());
+exports.Controller = Controller;

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Item = /** @class */ (function () {
     // Constructor
     function Item(id, name, price, description, status, image) {
