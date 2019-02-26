@@ -4,8 +4,7 @@ export class Controller {
     // private product = Item[] = [];
 
     constructor() {
-        console.log('Test product');
-        
+        console.log('Test product');       
     }
 
     getItems() : Item[] {
